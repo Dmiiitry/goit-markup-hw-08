@@ -1,0 +1,53 @@
+.section-services {
+    padding-bottom: 94px;
+}
+
+.servicec-list__position {
+    position: relative;
+}
+
+.services-list-position__text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.additional-text {
+    background-color: rgba(47, 48, 58, 0.8);
+    padding-top: 27px;
+    padding-bottom: 27px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.header-section {
+    margin-bottom: 50px;
+    font-family: var(--primary-font-family);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--main-color);
+}
+
+.services-list {
+    display: flex;
+}
+
+.services-list__item:not(:last-child) {
+    padding-right: 30px;
+}
