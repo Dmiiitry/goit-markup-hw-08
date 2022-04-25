@@ -1,9 +1,19 @@
+@media screen and (max-width: 1599px) {
+    .section-services {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 1600px){
+
 .section-services {
     padding-bottom: 94px;
 }
 
 .servicec-list__position {
     position: relative;
+    
 }
 
 .services-list-position__text {
@@ -32,21 +42,12 @@
     display: flex;
 }
 
-.header-section {
-    font-family: var(--primary-font-family);
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: var(--main-color);
-}
-
 .services-list {
+    margin-top: 50px;
     display: flex;
 }
 
 .services-list__item:not(:last-child) {
     padding-right: 30px;
+}
 }
