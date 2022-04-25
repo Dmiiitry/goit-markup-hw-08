@@ -7,8 +7,8 @@
 }
 
 .header {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .mobile-menu {
@@ -16,7 +16,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     overflow: auto;
     background-color: white;
     opacity: 0;
@@ -139,6 +139,82 @@
 
 .social-menu__item:not(:last-child) {
     padding-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+
+    .mobile-menu-button {
+        display: none;
+    }   
+    
+    .header {
+        border-bottom: 1px solid #ececec;
+    }
+    
+    .contacts__link {
+        padding-top: 35px;
+        padding-bottom: 35px;
+        font-family: var(--primary-font-family);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--secondary-text-color);
+    }
+    
+    .navigation {
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-list {
+        display: flex;
+        align-items: center;
+        font-family: var(--primary-font-family);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--main-color);
+    }
+    
+    .nav-list__item:not(:last-child) {
+        margin-right: 50px;
+    }
+    
+    .nav-list__link {
+        position: relative;
+        padding-bottom: 39px;
+    }
+    
+    
+    .contacts {
+        display: flex;
+        font-family: var(--primary-font-family);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--secondary-text-color);
+    }
+    
+    
+    
+    .сontacts-item__sprite-1 {
+        margin-right: 10px;
+        fill: currentColor;
+    }
+    
+    .сontacts-item__sprite-2 {
+        margin-right: 10px;
+        fill: currentColor;
+    }
 }
 
 // .header {
