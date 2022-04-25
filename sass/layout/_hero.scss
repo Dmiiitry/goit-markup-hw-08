@@ -4,21 +4,45 @@
         url("../image/background-image.jpg");
     background-size: cover;
     background-color: #2f303a66;
-    padding-top: 200px;
-    padding-bottom: 210px;
+
+
+}
+
+
+
+@media screen and (min-width: 480px) {
+    .hero__container {
+        width: 480px;
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero__container{
+        width: 768px;
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .hero__container {
+        width: 1600px;
+        height: 600px;
+    }
 }
 
 .title {
-    margin-bottom: 30px;
-    font-family: var(--primary-font-family);
-    font-style: normal;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    text-align: center;
-    color: var(--third-text-color);
+padding-top: 118px;
+padding-bottom: 30px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 900;
+font-size: 26px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: #FFFFFF;
 }
 
 .hero__button {

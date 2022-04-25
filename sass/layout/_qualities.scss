@@ -1,25 +1,21 @@
 .section-qualities {
-    padding-bottom: 94px;
-    padding-top: 94px;
+    padding-bottom: 60px;
+    padding-top: 60px;
 }
 
-.qualities-list {
-    display: flex;
-}
+// .qualities-list {
+//     display: flex;
+// }
 
 .qualities-list__item {
-    width: 270px;
-    &:not(:last-child) {
-        margin-right: 30px;
-    }
+    margin-bottom: 30px;
 }
 
 .qualities-list__image-box {
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 270px;
+    padding-top: 25px;
+    padding-right: 192px;
+    padding-left: 192px;
+    width: 450px;
     height: 120px;
     background: #f5f4fa;
     border-radius: 4px;
@@ -27,12 +23,16 @@
 
 
 .qualities-list__title {
+    margin-top: 30px;
     margin-bottom: 10px;
+    padding-left: 90px;
+    padding-right: 90px;
     font-family: var(--primary-font-family);
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
-    line-height: 1.14;
+    text-align: center;
+    line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
