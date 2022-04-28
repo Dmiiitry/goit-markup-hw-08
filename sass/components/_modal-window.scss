@@ -13,21 +13,6 @@
     }
 }
 
-.modal {
-    padding: 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 528px;
-    height: 582px;
-    background-color: var(--third-text-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-        0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-}
-
 .modal__close-btn {
     position: absolute;
     top: 8px;
@@ -208,8 +193,6 @@
     }
 }
 
-
-
 .contact-form__policy-link {
     font-family: 'Roboto';
     font-style: normal;
@@ -220,3 +203,39 @@
     letter-spacing: 0.03em;
     color: var(--accent-color);
 }
+
+@media screen and (max-width: 1599px) { 
+
+    .modal {
+        padding: 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 450px;
+        height: 609px;
+        background-color: var(--third-text-color);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .modal {
+        padding: 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 528px;
+        height: 582px;
+        background-color: var(--third-text-color);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+    }
+}
+

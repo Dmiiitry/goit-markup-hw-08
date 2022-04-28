@@ -14,10 +14,10 @@
 }
 
 .qualities-list__image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-top: 25px;
-    padding-right: 192px;
-    padding-left: 192px;
-    width: 450px;
     height: 120px;
     background: #f5f4fa;
     border-radius: 4px;
