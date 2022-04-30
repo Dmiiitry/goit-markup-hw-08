@@ -772,7 +772,7 @@ img {
   }
   .nav-list__link {
     position: relative;
-    padding-bottom: 100%;
+    padding-bottom: 48px;
   }
   .contacts {
     display: flex;
