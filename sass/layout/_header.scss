@@ -198,7 +198,7 @@
     
     .nav-list__link {
         position: relative;
-        padding-bottom: 39px;
+        padding-bottom: 100%;
     }
     
     
@@ -213,7 +213,9 @@
         color: var(--secondary-text-color);
     }
     
-    
+    .contacts__item {
+        margin-top: 10px;
+    }
     
     .сontacts-item__sprite-1 {
         margin-right: 10px;
@@ -277,7 +279,7 @@
 .nav-list__link {
     position: relative;
     padding-top: 32px;
-    padding-bottom: 32px;
+    padding-bottom: 38px;
 }
 
 
