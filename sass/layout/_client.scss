@@ -90,7 +90,7 @@
 
 @media screen and (min-width: 768px) {
     .client-section {
-        padding-top: 32px;
+        padding-top: 60px;
         padding-bottom: 60px;
     }
     
@@ -118,7 +118,7 @@
         border: 1px solid #afb1b8;
         box-sizing: border-box;
         border-radius: 4px;
-        width: 210px;
+        width: 226px;
         height: 92px;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
@@ -139,7 +139,7 @@
     }
 }
 
-@media screen and (min-width: 1600px) { 
+@media screen and (min-width: 1200px) { 
     .client-section {
         padding-top: 94px;
         padding-bottom: 94px;

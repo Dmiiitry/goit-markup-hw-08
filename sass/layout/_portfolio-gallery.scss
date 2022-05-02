@@ -264,9 +264,9 @@
     }
     
     .filters-list {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         padding-right: 0;
     }
     
@@ -393,7 +393,7 @@
     }
     }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
     .section-projects {
         padding-top: 94px;
         padding-bottom: 114px;

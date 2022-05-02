@@ -8,8 +8,9 @@
 }
 
 .header {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    border: 1px solid #ECECEC;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .navigation {
@@ -18,7 +19,7 @@
 }
 
 .mobile-menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -160,8 +161,8 @@
     
     .header {
         border-bottom: 1px solid #ececec;
-            padding-top: 32px;
-            padding-bottom: 32px;
+            padding-top: 26px;
+            padding-bottom: 26px;
         
     }
     
@@ -200,7 +201,7 @@
     
     .nav-list__link {
         position: relative;
-        padding-bottom: 49px;
+        padding-bottom: 44px;
     }
     
     
@@ -230,7 +231,7 @@
     }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
 
 .header {
     border-bottom: 1px solid #ececec;

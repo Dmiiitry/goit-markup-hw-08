@@ -86,13 +86,13 @@ img {
 }
 
 .container {
-  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
 }
 
 @media screen and (max-width: 479px) {
   .container {
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -107,7 +107,7 @@ img {
   .container {
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 480px;
   }
   .hero__container {
     height: 400px;
@@ -138,7 +138,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
     margin-left: auto;
@@ -307,7 +307,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .logo {
     margin-right: 92px;
     font-family: var(--secondary-font-family);
@@ -553,7 +553,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
     height: 582px;
@@ -571,15 +571,16 @@ img {
     display: none;
   }
   .header {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    border: 1px solid #ECECEC;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
   .navigation {
     display: flex;
     align-items: center;
   }
   .mobile-menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -700,8 +701,8 @@ img {
   }
   .header {
     border-bottom: 1px solid #ececec;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
   .contacts__link {
     padding-top: 35px;
@@ -734,7 +735,7 @@ img {
   }
   .nav-list__link {
     position: relative;
-    padding-bottom: 49px;
+    padding-bottom: 44px;
   }
   .contacts {
     display: flex;
@@ -759,7 +760,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .header {
     border-bottom: 1px solid #ececec;
     padding-top: 0;
@@ -1217,7 +1218,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .footer {
     display: flex;
     background: #2f303a;
@@ -1577,9 +1578,9 @@ img {
     padding-bottom: 40px;
   }
   .filters-list {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding-right: 0;
   }
   .filters-list__item {
@@ -1686,7 +1687,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .section-projects {
     padding-top: 94px;
     padding-bottom: 114px;
