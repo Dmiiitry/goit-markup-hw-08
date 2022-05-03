@@ -128,7 +128,7 @@ img {
   }
   .hero__container {
     width: 738px;
-    height: 400px;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
   }
@@ -458,17 +458,6 @@ img {
   margin-bottom: 20px;
 }
 
-.contact-form__checkbox-label {
-  font-size: 14px;
-  font-family: var(--primary-font-family);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-
 .contact-form__checkbox-label::before {
   display: inline-block;
   width: 16px;
@@ -523,23 +512,31 @@ img {
   background-color: #188ce8;
 }
 
-.contact-form__policy-link {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  /* identical to box height, or 171% */
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
-}
-
 @media screen and (max-width: 479px) {
   .modal {
     width: 100%;
   }
   .contact-text {
     margin-bottom: 20px;
+  }
+  .contact-form__part-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
+  .contact-form__policy-link {
+    letter-spacing: 0.03em;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
   }
 }
 
@@ -549,7 +546,26 @@ img {
     height: 609px;
   }
   .contact-text {
-    margin-bottom: 12px;
+    margin-bottom: 30px;
+  }
+  .contact-form__part-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
+  .contact-form__policy-link {
+    letter-spacing: 0.03em;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
   }
 }
 
@@ -560,6 +576,25 @@ img {
   }
   .contact-text {
     margin-bottom: 12px;
+  }
+  .contact-form__part-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
+  .contact-form__policy-link {
+    letter-spacing: 0.03em;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
   }
 }
 
@@ -585,13 +620,15 @@ img {
     left: 0;
     width: 100%;
     height: 100vh;
-    overflow: auto;
     background-color: white;
     opacity: 0;
+    overflow: auto;
     visibility: hidden;
     pointer-events: none;
     transition: opacity 150ms cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 1;
+    margin-top: auto;
+    margin-bottom: auto;
   }
   .mobile-menu.is-open {
     opacity: 1;
@@ -623,12 +660,15 @@ img {
     fill: var(--accent-color);
   }
   .mobile-menu__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
     position: relative;
     padding-top: 48px;
     padding-bottom: 48px;
   }
   .mobile-menu__list {
-    padding-bottom: 150px;
     padding-left: 40px;
   }
   .mobile-menu__item:not(:last-child) {
@@ -647,7 +687,6 @@ img {
     color: var(--accent-color);
   }
   .contacts-list {
-    padding-top: 150px;
     padding-bottom: 32px;
     padding-left: 40px;
   }
@@ -660,7 +699,7 @@ img {
     letter-spacing: 0.02em;
     color: #2196F3;
   }
-  .contacts-list__item {
+  .contacts-list__item:not(:last-child) {
     padding-bottom: 32px;
   }
   .contacts-list__mail {
@@ -687,6 +726,17 @@ img {
     letter-spacing: 0.02em;
     color: #2196F3;
   }
+  .social-menu__link:not(:last-child) {
+    padding-right: 10px;
+  }
+  .social-menu-link__line {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+    width: 22px;
+    height: 0px;
+    left: 135px;
+    top: 726px;
+  }
   .social-menu__item:not(:last-child) {
     padding-right: 10px;
   }
@@ -701,8 +751,8 @@ img {
   }
   .header {
     border-bottom: 1px solid #ececec;
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
   .contacts__link {
     padding-top: 35px;
@@ -735,7 +785,7 @@ img {
   }
   .nav-list__link {
     position: relative;
-    padding-bottom: 44px;
+    padding-bottom: 33px;
   }
   .contacts {
     display: flex;
@@ -747,7 +797,7 @@ img {
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
   }
-  .contacts__item {
+  .contacts__item:not(:first-child) {
     margin-top: 10px;
   }
   .сontacts-item__sprite-1 {
@@ -768,6 +818,9 @@ img {
   }
   .contacts__item:not(:last-child) {
     margin-right: 50px;
+  }
+  .contacts__item:not(:first-child) {
+    margin-top: 0;
   }
   .contacts__link {
     display: flex;
@@ -803,7 +856,7 @@ img {
   .nav-list__link {
     position: relative;
     padding-top: 32px;
-    padding-bottom: 38px;
+    padding-bottom: 32px;
   }
   .contacts__list {
     display: flex;
@@ -1574,7 +1627,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .section-projects {
-    padding-top: 66px;
+    padding-top: 60px;
     padding-bottom: 40px;
   }
   .filters-list {
@@ -1696,7 +1749,7 @@ img {
     display: none;
   }
   .filters-list {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     display: flex;
     justify-content: center;
     padding-right: 30px;
@@ -1727,7 +1780,6 @@ img {
     color: var(--third-text-color);
   }
   .projects-list {
-    margin-right: -30px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -1750,11 +1802,8 @@ img {
   .project-list__link:focus .overlay {
     transform: translateY(0%);
   }
-  .projects-list__item:not(:nth-child(3n)) {
-    margin-right: 30px;
-  }
-  .projects-list__item:not(:nth-last-child(-n + 3)) {
-    margin-bottom: 30px;
+  .projects-list__item {
+    width: 370px;
   }
   .project-list__img {
     width: 370px;
@@ -1776,6 +1825,9 @@ img {
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
+  }
+  .part-text {
+    padding-bottom: 0;
   }
   .project-list__content {
     position: relative;

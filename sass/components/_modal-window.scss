@@ -139,14 +139,6 @@
 }
 
 .contact-form__checkbox-label {
-    font-size: 14px;
-    font-family: var(--primary-font-family);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: #757575;
     &::before {
         display: inline-block;
         width: 16px;
@@ -205,16 +197,15 @@
     }
 }
 
-.contact-form__policy-link {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    /* identical to box height, or 171% */
-    letter-spacing: 0.03em;
-    color: var(--accent-color);
-}
+// .contact-form__policy-link {
+//     font-family: 'Roboto';
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: 24px;
+//     letter-spacing: 0.03em;
+//     color: var(--accent-color);
+// }
 
 @media screen and (max-width: 479px) {
     .modal {
@@ -224,6 +215,26 @@
     .contact-text {
         margin-bottom: 20px;
     }
+        .contact-form__part-link {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.03em;
+            color: #757575;
+        }
+        
+        .contact-form__policy-link {
+            letter-spacing: 0.03em;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.03em;
+            color: var(--accent-color);
+        }
 }
 
 @media screen and (min-width: 480px) {
@@ -232,7 +243,28 @@
         height: 609px;
     }
     .contact-text {
-        margin-bottom: 12px;
+        margin-bottom: 30px;
+    }
+
+    .contact-form__part-link{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    color: #757575;
+    }   
+
+    .contact-form__policy-link {
+        letter-spacing: 0.03em;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.03em;
+        color: var(--accent-color);
     }
 }
 
@@ -243,6 +275,27 @@
     }
     .contact-text {
         margin-bottom: 12px;
+    }
+
+    .contact-form__part-link {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: #757575;
+    }
+
+    .contact-form__policy-link {
+        letter-spacing: 0.03em;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: var(--accent-color);
     }
 }
 

@@ -53,8 +53,8 @@
         </ul>
         </div>
         </div>
-        <div class="mobile-menu" data-menu>
-            <div class="container mobile-menu__container">
+        <div class="mobile-menu container" data-menu>
+            <div class="mobile-menu__container">
             <button type="button" class="mobile-menu__close-btn" data-menu-close>
                 <svg class="mobile-menu__close-icon"  width="40" height="40">
                     <use href="./image/symbol-defs.svg#close-icon"></use>
@@ -72,6 +72,7 @@
                     <a class="mobile-menu__link link" href="">Контакты</a>
                 </li>
             </ul>
+            <div>
             <ul class="contacts-list list">
                 <li class="contacts-list__item">
                     <a class="contacts-list__number link" href="tel:+380961111111">+38 096 111 11 11</a>
@@ -83,17 +84,21 @@
             <ul class="social-menu list">
                 <li class="social-menu__item">
                     <a class="social-menu__link link" href="">Instagram</a>
+                    <a class="social-menu-link__line"></a>
                 </li>
                 <li class="social-menu__item">
                     <a class="social-menu__link link" href="">Twitter</a>
+                    <a class="social-menu-link__line"></a>
                 </li>
                 <li class="social-menu__item">
                     <a class="social-menu__link link" href="">Facebook</a>
+                    <a class="social-menu-link__line"></a>
                 </li>
                 <li class="social-menu__item">
                     <a class="social-menu__link link" href="">LinkedIn</a>
                 </li>
             </ul>
+            </div>
             </div>
         </div>
     </header>
@@ -533,7 +538,7 @@
             <div class="contact-form__checkbox-wrapper">
                 <input type="checkbox" class="contact-form__checkbox vissual-hidden"  id="policy-checkbox">
                 <label for="policy-checkbox" name="accept_policy" class="contact-form__checkbox-label" required>
-                Соглашаюсь с рассылкой и принимаю <a href="" class="contact-form__policy-link">Условия договора</a></label>      
+                <span class="contact-form__part-link">Соглашаюсь с рассылкой и принимаю</span> <a href="" class="contact-form__policy-link">Условия договора</a></label>      
             </div>
             <button type="submit" class="contact-form__submit-btn">Отправить</button>
             </form>

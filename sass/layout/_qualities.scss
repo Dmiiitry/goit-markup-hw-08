@@ -4,10 +4,6 @@
     padding-top: 60px;
 }
 
-// .qualities-list {
-//     display: flex;
-// }
-
 .qualities-list__item {
     margin-bottom: 30px;
 
@@ -57,10 +53,6 @@
     padding-bottom: 32px;
     padding-top: 60px;
 }
-
-// .qualities-list {
-//     display: flex;
-// }
 
 .qualities-list__item {
     margin-bottom: 30px;
@@ -138,15 +130,17 @@
     
     
     .qualities-list__title {
-        margin-bottom: 10px;
-        font-family: var(--primary-font-family);
+        font-family: 'Roboto';
         font-style: normal;
-        font-weight: bold;
+        font-weight: 700;
         font-size: 14px;
-        line-height: 1.14;
+        line-height: 16px;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: var(--main-color);
+        text-align: justify;
+        padding-left: 0;
+        padding-right: 0;
     }
     
     .qualities-list__text {
