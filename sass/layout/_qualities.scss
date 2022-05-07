@@ -166,9 +166,12 @@
     
     .qualities-list__item {
         width: 270px;
-    
+        margin-bottom: 0;
         &:not(:last-child) {
             margin-right: 30px;
+        }
+        &:not(:nth-last-child(-n+2)) {
+            margin-bottom: 0;
         }
     }
     

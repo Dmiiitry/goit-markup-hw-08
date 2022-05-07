@@ -1235,9 +1235,13 @@ img {
   }
   .qualities-list__item {
     width: 270px;
+    margin-bottom: 0;
   }
   .qualities-list__item:not(:last-child) {
     margin-right: 30px;
+  }
+  .qualities-list__item:not(:nth-last-child(-n+2)) {
+    margin-bottom: 0;
   }
   .qualities-list__image-box {
     padding: 0;
